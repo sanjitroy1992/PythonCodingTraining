@@ -12,12 +12,26 @@ Method 2 (Efficient): This method is efficient then the above method and avoids 
 
 """
 
-l=[0,1,2,3,4,5,6,7,8,9]
+arr=[0,1,2,3,4,5,6,7,8]
+length = len(arr)
+endindex = int(length/2)-1
+endlen = length-1
+for i in range(0, endindex + 1):
+    swap = arr[i]
+    arr[i] = arr[endlen]
+    arr[endlen] = swap
+    endlen -= 1
+    print("index: {}, arr: {}".format(i, arr))
+    if (endlen == endindex):
+        break
+print(arr)
 
-s=0
-e=len(l)-1
-while(s<e):
-    l[s],l[e]=l[e],l[s]
-    s+=1
-    e-=1
-print(l)
+
+# l=[0,1,2,3,4,5,6,7,8,9]
+# s=0
+# e=len(l)-1
+# while(s<e):
+#     l[s],l[e]=l[e],l[s]
+#     s+=1
+#     e-=1
+# print(l)

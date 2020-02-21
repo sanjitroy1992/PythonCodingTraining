@@ -13,7 +13,7 @@ Say, arr[] = [1, 2, 3, 4, 5, 6, 7], K = 2
 
 l=[0,1,2,3,4,5,6,7,8,9]
 temp=[]
-k=4
+k=2
 for i in range(0,k):
     temp.append(l[i])
 # print(temp)
