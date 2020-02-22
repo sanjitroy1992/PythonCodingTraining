@@ -34,10 +34,10 @@ def single_number():
     aux_dic = {}
     for i in range(len(num)):
         if num[i] in aux_dic:
-            aux_dic[num[i]]+=1
+            aux_dic[num[i]] += 1
         else:
-            aux_dic[num[i]]=1
-    # print(aux_dic)
+            aux_dic[num[i]] = 1
+    print(aux_dic)
     try:
         for i, j in aux_dic.items():
             if j == 1:
