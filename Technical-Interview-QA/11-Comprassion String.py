@@ -11,11 +11,12 @@ string1 = aabcccccaaa
 output = a2b1c5a3
 
 Steps:
-1. .
-2. If the length of the row is one then return median from that matrix.
-3. else for every row add all in the matrix add the list of values to a new list
-4. sort the new list using 'sorted' inbuilt function
-5. return the median = newlist[len(newlist)//2]
+1. If the length of the string is less that or equal to 1 the return false.
+2. start for loop with the 2nd index till the last index and Compare prev string with the current string and if the are the same then increase the count.
+3. else add the string character along with the counter
+4. at the end for the last character add the character along with the counter to the compressed string.
+5. in the end check if the compressed string length if greater than input string.
+6. if yes the return compressed string else return input string.
 
 Youtube: https://youtu.be/sE7F1WroB1M?list=PL5tcWHG-UPH1D-JVSiZI_8I8LPUJtoHdg
 """
