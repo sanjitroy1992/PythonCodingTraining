@@ -16,7 +16,7 @@ Hence the binary representation would be --> 11110010 (bottom to top)
 cmd-->python--> int('11110010', 2) ->##(here we have taken base 2 to convert to integer) --> 242
 """
 
-from PythonCodingTraining.DataStructure.Stack import Stack
+from PythonCodingTraining.DataStructure.Stack.Stack import Stack
 
 
 def div_by_2(dec_num):

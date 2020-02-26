@@ -13,7 +13,7 @@ Non-Balanced Example: ))
 Youtube: https://youtu.be/TC7apM-xGaU?list=PL5tcWHG-UPH112e7AN7C-fwDVPVrt0wpV
 
 """
-from PythonCodingTraining.DataStructure.Stack import Stack
+from PythonCodingTraining.DataStructure.Stack.Stack import Stack
 
 def if_paren_balanced(paren_string):
     s = Stack()
