@@ -30,9 +30,11 @@ for i in range(int(input())):
     score = float(input())
     marksheet += [[name, score]]
     scores += [score]
+print(marksheet)
 
 TargetScore = float(sorted(set(scores))[1])
-length = (len(sorted(marksheet))//2)+1
+# length = (len(sorted(marksheet))//2)+1
+length = (len(sorted(marksheet)))
 newmarksheet = sorted(marksheet)
 for i in range(length):
     if float(newmarksheet[i][1]) == TargetScore:
