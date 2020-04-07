@@ -8,16 +8,16 @@ def intersection():
     intersectionlist = []
     while i < len(A) and j < len(B):
         if A[i] == B[j]:
-                if A[i] != A[i-1]:
-                    intersectionlist.append(A[i])
-                    i += 1
-                    j += 1
-                elif A[i]<B[j]:
-                    i += 1
-                else: ## A[i]>B[j]
-                    j += 1
-    print(intersectionlist)
-# print(intersection())
+            if i == 0 or A[i] != A[i-1]:
+                intersectionlist.append(A[i])
+            i += 1
+            j += 1
+        elif A[i]<B[j]:
+            i += 1
+        else: ## A[i]>B[j]
+            j += 1
+    return intersectionlist
+print(intersection())
 
 
 # import requests
@@ -33,12 +33,12 @@ def intersection():
 # diff = pd.pdfdiff('D:\\TACOE_All_Projects\\PDFDiff\\Baseline.pdf', 'D:\\TACOE_All_Projects\\PDFDiff\\App.pdf')
 # print(dict)
 
-def returnvalue():
-    n = int(input())
-    arr = list(map(int, input().split()))
-    print(arr)
-    maxv = max(arr)
-    l = list(filter(lambda x: x != maxv, arr))
-    print(l)
-    return (max(l))
-print(returnvalue())
+# def returnvalue():
+#     n = int(input())
+#     arr = list(map(int, input().split()))
+#     print(arr)
+#     maxv = max(arr)
+#     l = list(filter(lambda x: x != maxv, arr))
+#     print(l)
+#     return (max(l))
+# print(returnvalue())

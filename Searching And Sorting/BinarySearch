@@ -1,0 +1,20 @@
+def BinarySearch(arr,valuetosearch):
+    l = 0
+    r = len(arr)-1
+    while l<=r:
+        mid = l + (r-l)/2
+        if arr[mid] == valuetosearch:
+            return mid
+        elif arr[mid] > valuetosearch:
+            r = mid-1
+        elif arr[mid] < valuetosearch:
+            l = mid + 1
+    return -1
+
+
+arr = [2, 5, 8, 12, 16, 23, 38, 56, 72, 91]
+result = BinarySearch(arr, 38)
+if result != -1:
+    print("Element is present at {} position".format(result))
+else:
+    print("Element not found")
