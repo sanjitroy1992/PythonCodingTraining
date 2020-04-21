@@ -8,8 +8,8 @@ B
 A
 If you would retrieve the books from the stack the order would be D, C, B, A.
 You would do it from the top book towards bottom.
-Tow thing we need to remember here.
-one: In order to keep a book we need to push it into the stack.
+Two things we need to remember here.
+one: In order to keep a book we need to push it onto the stack.
 Two: In order to retrieve a book we need to pop it from the stack.
 Hence Push and Pop are two fundamental routine that we need fot stack data structure.
 
