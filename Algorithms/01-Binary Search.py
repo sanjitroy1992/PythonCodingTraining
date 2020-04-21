@@ -34,17 +34,17 @@ def iterative_binary_search(data, target):
 
 print(iterative_binary_search(data, target))
 
-# ##Recursive Binary Search:
-# def recursive_binary_search(data, target, low, high):
-#     if low > high:
-#         return False
-#     else:
-#         mid = int((low + high)/2)
-#         if target == data[mid]:
-#             print("True")
-#         elif target < data[mid]:
-#             recursive_binary_search(data, target, low, mid - 1)
-#         else:
-#             recursive_binary_search(data, target, mid + 1, high)
-#
-# print(recursive_binary_search(data, target, 0, len(data)-1))
+##Recursive Binary Search:
+def recursive_binary_search(data, target, low, high):
+    if low > high:
+        return False
+    else:
+        mid = int((low + high)/2)
+        if target == data[mid]:
+            print("True")
+        elif target < data[mid]:
+            recursive_binary_search(data, target, low, mid - 1)
+        else:
+            recursive_binary_search(data, target, mid + 1, high)
+
+print(recursive_binary_search(data, target, 0, len(data)-1))
