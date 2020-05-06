@@ -21,4 +21,4 @@ def find_uppercase_recursive(string, idx=0):
         return "No uppercase letter found"
     return find_uppercase_recursive(string, idx+1)
 
-print(find_uppercase_recursive(String2))
+print(find_uppercase_recursive(String1))

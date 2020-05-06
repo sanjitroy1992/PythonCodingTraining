@@ -32,13 +32,13 @@ Output = [2, 3, 4, 5, 6, 7, 8]
 #     list1.append(int(i))
 # print(list1)
 
-num = list(map(int, input("\nEnter the numbers : ").strip().split(" ")))
-print("Original list: {}".format(num))
-for index, item in enumerate(num):
-    if item == 3:
-        num[index] = 6
-num = [6 if i == 3 else i for i in num]
-print(num)
-list1 = []
-[list1.append(i) for i in num if i not in list1]
-print(list1)
+# num = list(map(int, input("\nEnter the numbers : ").strip().split(" ")))
+# print("Original list: {}".format(num))
+# for index, item in enumerate(num):
+#     if item == 3:
+#         num[index] = 6
+# num = [6 if i == 3 else i for i in num]
+# print(num)
+# list1 = []
+# [list1.append(i) for i in num if i not in list1]
+# print(list1)

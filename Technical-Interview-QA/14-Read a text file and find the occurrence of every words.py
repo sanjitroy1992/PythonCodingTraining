@@ -15,4 +15,20 @@ def find_word_occurrence(file=None):
         print(dict1)
 
 
-find_word_occurrence(file='D:\\file.txt')
+# find_word_occurrence(file='D:\\file.txt')
+
+
+"read a file and find a line where these strings are there"
+
+
+def find_word_occurrence(file=None, string_to_search=None):
+    with open(file, "r") as f:
+        lines = f.readlines()
+        for line in lines:
+            if string_to_search in line:
+                return line
+
+
+
+
+
