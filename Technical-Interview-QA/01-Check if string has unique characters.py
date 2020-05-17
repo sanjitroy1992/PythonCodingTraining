@@ -18,4 +18,3 @@ def is_unique():
         print("string: {} is unique".format(sting))
     else:
         print("string: {} is not unique".format(sting))
-is_unique()

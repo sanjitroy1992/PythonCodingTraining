@@ -43,4 +43,17 @@ def are_anagram(str1, str2):
         if(count1[i]!=count2[i]):
             return False
     return True
-print(are_anagram("geeksforgeeks", "forgeeksgeeks"))
+# print(are_anagram("geeksforgeeks", "forgeeksgeeks"))
+
+def anagram(a, b):
+    if not len(a)==len(b):
+        return False
+
+    str1 = sorted(a.lower())
+    str2 = sorted(b.lower())
+    if str1 == str2:
+        return True
+    else:
+        return False
+
+print(anagram("abcde", "aBced"))

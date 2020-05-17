@@ -55,4 +55,12 @@ def intersection_list():
 
 # print(intersection_list())
 
-
+list1 = [1,2,3,4]
+# count = 0
+item = 5
+position = 2
+list1.append("temp")
+for i in range(len(list1)-1, position,-1):
+    list1[i] = list1[i-1]
+list1[position] = item
+print(list1)

@@ -2,15 +2,11 @@
 Balanced: ({[]})
 Not Balanced: ({[}})
 """
-
-
-
         
 def balanced_parenthesis():
     expr = "({[]})"
     s = []
     for i in range(len(expr)):
-        print(expr[i])
         if expr[i] in "({[":
             s.append(expr[i])
         elif len(s) == 0:

@@ -1,7 +1,5 @@
 """
 check-string-substring-another
-
-
 """
 def search(txt,pat):
     n=len(txt)

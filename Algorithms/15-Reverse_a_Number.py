@@ -11,7 +11,7 @@ def reverse(seq):
         seq[-i-1] = x
 
 l = ['a', 'b', 'c', 'd', 'e']
-reverse(l)
+# print(reverse(l))
 # print(l)
 
 print(l[0:-1])
