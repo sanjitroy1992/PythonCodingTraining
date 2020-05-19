@@ -11,7 +11,7 @@ def find_uppercase_iterative():
         if string[i].isupper():
             return string[i]
     return False
-# print(find_uppercase_iterative())
+print(find_uppercase_iterative())
 
 ## 2. Find Uppercase Recursive
 def find_uppercase_recursive(string, idx=0):
@@ -21,4 +21,4 @@ def find_uppercase_recursive(string, idx=0):
         return "No uppercase letter found"
     return find_uppercase_recursive(string, idx+1)
 
-print(find_uppercase_recursive(String1))
+# print(find_uppercase_recursive(String1))
