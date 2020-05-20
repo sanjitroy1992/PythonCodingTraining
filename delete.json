@@ -1,0 +1,16 @@
+{
+  "employee": [
+    {
+      "name": "Sanjit",
+      "job": "Finastra",
+      "Active": true,
+      "extra": null
+    },
+    {
+      "name": "Sounak",
+      "job": "VMWare",
+      "Active": true,
+      "extra": "yes"
+    }
+  ]
+}
