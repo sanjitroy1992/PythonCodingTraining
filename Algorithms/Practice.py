@@ -63,4 +63,31 @@ list1.append("temp")
 for i in range(len(list1)-1, position,-1):
     list1[i] = list1[i-1]
 list1[position] = item
-print(list1)
+# print(list1)
+
+# list1 = [0,1,1,1,0,0,1,0]
+# list1 = []
+# zero = []
+# ones = []
+# if list1 == []:
+#     raise Exception("empty")
+# for i in range(len(list1)):
+#     if list1[i] is 0:
+#         zero.append(list1[i])
+#     else:
+#         ones.append(list1[i])
+# print(zero+ones)
+
+# x = 10
+# y = x + 1
+# print(id(x) == id(y))
+import copy
+nums = [3,2,2,3]
+def strStr(haystack: str, needle: str) -> int:
+    if needle in haystack:
+        index = haystack.index(needle)
+        return index
+    else:
+        return -1
+
+print(strStr(haystack = "hello", needle = "ll"))
