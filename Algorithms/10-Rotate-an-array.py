@@ -45,5 +45,5 @@ def rotate_array_left_to_right():
     print(A)
 
 
-rotate_array_left_to_right()
-# rotate_array_right_to_left()
+# rotate_array_left_to_right()
+rotate_array_right_to_left()

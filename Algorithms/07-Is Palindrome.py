@@ -13,6 +13,6 @@ a = "abcba"
 rev = ""
 for i in range(len(a)):
     rev = a[i] + rev
-    i += 1
+    # i += 1
 if a[:] == rev[::-1]:
     print(True)

@@ -76,13 +76,13 @@ class DoublyLinkedList:
         cur = self.head
         while cur:
             if cur.data == key and cur == self.head:
-                # Case 1:
+                # Case 1: When we have only one node in the doubly linked list
                 if not cur.next:
                     cur = None 
                     self.head = None
                     return
 
-                # Case 2:
+                # Case 2: When there are two nodes and our key node is the head node
                 else:
                     nxt = cur.next
                     cur.next = None 
@@ -92,7 +92,7 @@ class DoublyLinkedList:
                     return 
 
             elif cur.data == key:
-                # Case 3:
+                # Case 3: Deleting a node from somewhere in the middle of the list (cur.next is not None)
                 if cur.next:
                     nxt = cur.next 
                     prev = cur.prev
@@ -103,7 +103,7 @@ class DoublyLinkedList:
                     cur = None
                     return
 
-                # Case 4:
+                # Case 4: Deleting a node at the end of the list (cur.next is None)
                 else:
                     prev = cur.prev 
                     prev.next = None 

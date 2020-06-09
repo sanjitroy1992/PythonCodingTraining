@@ -22,10 +22,10 @@ class Stack:
         print("original q: {}".format(self.q.get_queue()))
         for i in range(self.q.get_size() - 1):
             print(i)
-            dequeued = self.q.dequeue()
-            print("after q: {}".format(self.q.get_queue()))
-            print("dequeued value: {}".format(dequeued))
-            self.q.enqueue(dequeued)
+            # dequeued = self.q.dequeue()
+            # print("after q: {}".format(self.q.get_queue()))
+            # print("dequeued value: {}".format(dequeued))
+            self.q.enqueue(self.q.dequeue())
             print("enqueue: {}".format(self.q.get_queue()))
         return self.q.dequeue()
 

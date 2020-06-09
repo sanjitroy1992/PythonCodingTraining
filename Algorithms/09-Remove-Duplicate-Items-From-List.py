@@ -14,7 +14,6 @@ List1 = []
 print(List1)
 #
 #
-
 #
 # list = []
 # for i in range(len(Input)):

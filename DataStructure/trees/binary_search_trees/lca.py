@@ -119,9 +119,11 @@ bst.insert(4)
 bst.insert(7)
 bst.insert(13)
 
-tree = BST()
-tree.root = Node(1)
-tree.root.left = Node(2)
-tree.root.right = Node(3)
+print(bst.find(10))
 
-print(bst.lca(1, 6))
+# tree = BST()
+# tree.root = Node(1)
+# tree.root.left = Node(2)
+# tree.root.right = Node(3)
+#
+# print(bst.lca(1, 6))

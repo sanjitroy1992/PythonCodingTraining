@@ -13,7 +13,7 @@ def find():
     list1 = [-14, -10, 2, 108, 108, 243, 285, 285, 285, 401]
     target = 108
     low = 0
-    high = len(list1)
+    high = len(list1)-1
     while(low<=high):
         mid = (low+high)//2
         if(target>list1[mid]):

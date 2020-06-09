@@ -1,5 +1,7 @@
-A = [2,3,3,4,5,6]
-B = [2,3,3,5,9]
+A = [2,2,3,3,4,5,6]
+B = [2,2,3,3,5,9]
+
+Output = [2, 3, 5]
 
 # print(set(A).intersection(set(B)))
 def intersection():
