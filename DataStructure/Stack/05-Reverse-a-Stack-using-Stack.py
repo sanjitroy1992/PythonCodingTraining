@@ -23,7 +23,10 @@ class Stack:
     def get_stack(self):
         return self.items
 
-
+# Approach
+# Using a single stack to first push all the element into the stack
+# then while stack is not empty remove element from stack using pop and update the reverse string
+# once stack is empty return the string
 def reverse(stack, input_string=None):
     for i in range(len(input_string)):
         stack.push(input_string[i])

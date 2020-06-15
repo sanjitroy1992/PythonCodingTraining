@@ -15,6 +15,11 @@ class MyStack:
     def pop(self) -> int:
         """
         Removes the element on top of the stack and returns that element.
+        Pop method is costly here.
+        get the size of the queue and run a for loop till size-1. if size=3 the only run the loop twice.
+        dequeue item one by one with 0 index from the queue and enqueue it to the stack again
+        finally the end the queue will have the last added element in the first position in the stack
+        In the end pop that value using dequeue method and return it
         """
         for i in range(self.q.get_size() - 1):
             self.q.enqueue(self.q.dequeue())
@@ -58,11 +63,11 @@ class Queue:
     def get_queue(self):
         return self.items
 
-# s = MyStack()
-# s.push(1)
-# s.push(2)
-# s.push(3)
-# print(s.top())
-# print(s.empty())
-# s.pop()
-# print(s.top())
+s = MyStack()
+s.push(1)
+s.push(2)
+s.push(3)
+print(s.top())
+print(s.empty())
+s.pop()
+print(s.top())

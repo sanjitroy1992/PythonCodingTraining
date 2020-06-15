@@ -40,4 +40,11 @@ def reverse_string(string1):
             r -= 1
     return ''.join(toList)
 
-print(reverse_string(string1))
+# sort names with second value in a nested list
+names = [["Harry Potter",1], ["Sanjit Roy",0], ["Anmol Ratan",2], ["Karthik S",3], ["Sounak Saha",4]]
+print(sorted(names, key=lambda name:name[1]))
+
+# List of Odd numbers using filter and lambda
+num = [1,2,3,4,5,6,7,8,9]
+even_num = list(filter(lambda x:x%2!=0, num))
+print(even_num)

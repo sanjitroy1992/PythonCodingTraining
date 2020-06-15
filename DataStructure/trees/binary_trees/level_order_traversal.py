@@ -16,9 +16,6 @@ class Queue(object):
         if not self.is_empty():
             return self.items[-1].value
 
-    def __len__(self):
-        return self.size()
-
     def size(self):
         return len(self.items)
 
@@ -72,15 +69,23 @@ class BinaryTree(object):
             traversal += (str(start.value) + "-")
         return traversal
 
-    def levelorder_print(self, start):
-        if start is None:
+    def levelorder_print(self, root):
+        # So we look at every level of the tree starting from root node
+        # best way to demonstrate a level order tree is by using queue
+        # first enqueu the root node and check if queue size is greater than 0
+        # if yes then add it to the traversal string and dequeue the node and store it in node variable
+        # while size of the queue is greater than 0
+        # next check if node variable has left child if yes then enqueue it to the queue
+        # next check if node variable has right child if yes then enqueue it to the queue
+        # at the end return the traversal string
+        if root is None:
             return 
 
         queue = Queue()
-        queue.enqueue(start)
+        queue.enqueue(root)
 
         traversal = ""
-        while len(queue) > 0:
+        while queue.size() > 0:
             traversal += str(queue.peek()) + "-"
             node = queue.dequeue()
 
