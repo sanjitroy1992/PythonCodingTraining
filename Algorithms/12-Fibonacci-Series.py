@@ -53,7 +53,7 @@ def fibonacci_memoization(n):
             value = fibonacci_memoization(n-1) + fibonacci_memoization(n-2)
         # cache the value and return it
         fibonacci_cache[n] = value
-        print(fibonacci_cache)
+        # print(fibonacci_cache)
 
         return value
 

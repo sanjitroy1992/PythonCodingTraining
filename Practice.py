@@ -232,9 +232,14 @@ def printZigZagConcat(string, n):
     # Driver Code
 
 
-str = "GEEKSFORGEEKS"
-n = 3
-printZigZagConcat(str, n)
+# str = "GEEKSFORGEEKS"
+# n = 3
+# printZigZagConcat(str, n)
 
-# This code is contributed
-# by ChitraNayal
+# num = 12.8388338
+# print(str(round(num, 2)))
+# print("{:0.2f}".format(num))
+
+set1 = {1,2,3,4,4,4,4,4}
+print(set1.add(5))
+print(set1)
