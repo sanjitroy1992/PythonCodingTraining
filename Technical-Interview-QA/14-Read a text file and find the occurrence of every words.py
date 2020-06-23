@@ -21,7 +21,7 @@ def find_word_occurrence(file=None):
 "read a file and find a line where these strings are there"
 
 
-def find_word_occurrence(file=None, string_to_search=None):
+def find_word(file=None, string_to_search=None):
     with open(file, "r") as f:
         lines = f.readlines()
         for line in lines:

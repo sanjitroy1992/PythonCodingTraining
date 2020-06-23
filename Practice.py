@@ -240,6 +240,41 @@ def printZigZagConcat(string, n):
 # print(str(round(num, 2)))
 # print("{:0.2f}".format(num))
 
-set1 = {1,2,3,4,4,4,4,4}
-print(set1.add(5))
-print(set1)
+# set1 = {1,2,3,4,4,4,4,4}
+# print(set1.add(5))
+# print(set1)
+# str1 = "sanjit"
+# str2 = ['s', 'a', 'n', 'j', 'i', 't']
+# list1 = list(map(str, str1))
+# print(list1)
+# str3 = ''.join(str2)
+# print(str3)
+"""Input: "Hello -5LOL6"
+Output: hELLO -6lol5
+
+Input: "2S 6 du5d4e"
+Output: "2s 6 DU4D5E"""
+
+input1 = "Hello -5LOL6"
+arr = list(map(str, input1))
+
+start = 0
+end = len(arr) - 1
+
+for i in range(len(arr)):
+  print(arr[i])
+  if arr[i].isupper():
+    arr[i] = arr[i].lower()
+  elif arr[i].islower():
+    arr[i] = arr[i].upper()
+  elif (type(arr[i]) == int):
+      if start == 0:
+          start = i
+      else:
+          end = i
+          tmp = arr[start]
+          arr[start] = arr[end]
+          arr[end] = tmp
+          start = 0
+
+print("".join(arr))
