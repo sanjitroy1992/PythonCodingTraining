@@ -24,8 +24,6 @@ Now concatenate the two rows and ignore spaces
 in every row. We get "GSGSEKFREKEOE"
 """
 
-# Prints concatenation of all
-# rows of str's Zig-Zag fasion
 def printZigZagConcat(string, n):
     # Corner Case (Only one row)
     if n == 1:
