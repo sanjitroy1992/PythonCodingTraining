@@ -23,5 +23,6 @@ with open("text.txt", 'r') as f:
     list1 = []
     for line in lines:
         list1.append(str(line.strip('\n')).split(" "))
-    for i in list1:
+    print(list1)
+    for i in list1[::-1]:
         print(" ".join(i[::-1]))
